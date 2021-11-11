@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{{tittle }}</title>
+    </head>
+    <body>
+       <p>This is {{first_name}}</p>
+       <h1></h1>
+       <p>{{stuff |safe}}</p>
+       <h2>Favorite Pizza:</h2>
+       {% for food in pizza  %}
+       {% if food == 41 %}
+       {{food+200}}
+       
+      {% else %}
+      <p>{{food}}</p>
+       {% endif %}
+       
+        {% endfor %}
+        {{pizza.0| reverse}}
+       
+       
+    </body>
+</html>
